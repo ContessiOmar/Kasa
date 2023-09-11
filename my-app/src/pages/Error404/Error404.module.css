@@ -1,0 +1,76 @@
+.pageError {
+    text-align: center;
+    max-height: 100%;
+  }
+  
+  .Err404 {
+    color: #ff6060;
+    font-size: 288px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 0%;
+  
+    max-height: 263px;
+    margin-bottom: 66px;
+  }
+  
+  .textError {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #ff6060;
+    max-height: 51px;
+    margin-bottom: 182px;
+  }
+  
+  .saut {
+    display: none;
+  }
+  
+  .lien {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+    max-height: 26px;
+    margin-bottom: 159px;
+  }
+  
+  @media all and (max-width: 1000px) {
+    .pageError {
+      margin-top: 95px;
+    }
+    .Err404 {
+      font-size: 190px;
+      margin-bottom: 30px;
+    }
+    .textError {
+      font-size: 25px;
+      margin-bottom: 133px;
+    }
+  
+    .saut {
+      display: block;
+    }
+    .lien {
+      font-size: 14px;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .pageError {
+      margin-top: 195px;
+    }
+  
+    .Err404 {
+      font-size: 96px;
+      max-height: 99px;
+      margin-bottom: 11px;
+    }
+    .textError {
+      font-size: 18px;
+    }
+    .lien {
+    }
+  }
+  

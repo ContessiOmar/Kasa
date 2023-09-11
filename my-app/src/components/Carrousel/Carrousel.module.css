@@ -1,0 +1,88 @@
+.section {
+    width: 100%;
+    min-height: 415px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .imgContainerMulti {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carrousel {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 2%;
+    position: relative;
+  }
+  
+  .fleche {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .precedenteGauche, .suivanteDroite {
+    cursor: pointer;
+  }
+  
+  .number {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 200px;
+    right: 50%;
+  }
+  
+  .imgContainerSingle {
+    max-height: 100%;
+  }
+  
+  .singleImage {
+    width: 100%;
+    border-radius: 25px;
+    max-height: 415px;
+    object-fit: cover;
+  }
+  
+  @media all and (max-width: 991px) {
+    .number {
+      display: none;
+    }
+  
+    .fleche {
+      height: 40px;
+    }
+  }
+  
+  @media all and (max-width: 767px) {
+    .number {
+      display: none;
+    }
+  
+    .fleche {
+      height: 20px;
+    }
+  
+    .section {
+      min-height: 255px;
+    }
+  }
+  

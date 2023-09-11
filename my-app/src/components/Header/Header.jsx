@@ -23,7 +23,7 @@ function Header() {
         </NavLink>
         <div className={style.navBarre}>
           <NavLink
-            to="/"
+            to="/"  // L'insertion de "/" indique que nous serons redirigés vers l'homepage.
             className={`${style.accueil} ${
               activeLink === "accueil" ? style.active : ""
             }`}

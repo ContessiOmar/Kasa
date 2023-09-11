@@ -1,0 +1,154 @@
+.page {
+    margin: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  .infosLogement {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .titre {
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    max-height: 51px;
+    margin-bottom: 0px;
+  }
+  
+  .location {
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  .proprietaire {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-end;
+  }
+  
+  .noms {
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    text-align: end;
+    max-width: 50%;
+  }
+  
+  .picture {
+    border-radius: 100%;
+    max-height: 64px;
+    max-width: 64px;
+    margin-left: 10px;
+  }
+  
+  .tag {
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 115px;
+    max-height: 25px;
+  }
+  
+  .divProprietaire {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .collapse {
+    display: flex;
+    margin-top: 24px;
+    gap: 4%;
+    max-width: 100%;
+  }
+  .divCollapse {
+    width: 100%;
+  }
+  
+  .equipement {
+    list-style-type: none;
+  }
+  
+  @media all and (max-width: 991px) {
+    .infos {
+      flex-direction: column;
+    }
+    .divProprietaire {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .divCollapse {
+      margin-bottom: 20px;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .infos {
+      flex-direction: column;
+    }
+    .divProprietaire {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .proprietaire {
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .picture {
+      max-width: 32px;
+      max-height: 32px;
+    }
+    .noms {
+      font-size: 12px;
+    }
+    .collapse {
+      flex-direction: column;
+      margin-top: 16.5px;
+    }
+    .divCollapse {
+      margin-bottom: 20px;
+    }
+    .titre {
+      font-size: 18px;
+    }
+    .location {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      font-size: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border-radius: 5px;
+    }
+  }
+  

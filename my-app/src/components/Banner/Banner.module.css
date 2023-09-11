@@ -1,0 +1,75 @@
+.homePage {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    min-height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  .imgBanner {
+    min-width: 100%;
+    min-height: 223px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px 25px;
+  }
+  
+  .divTexte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 100%;
+    max-height: 223px;
+    min-height: 100%;
+    border-radius: 25px 25px;
+  }
+  
+  .texteBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  
+  @media all and (max-width: 1260px) {
+    .texteBanner {
+      font-size: 34px;
+      border-radius: 10px 10px;
+    }
+    .imgBanner {
+      border-radius: 10px 10px;
+      min-height: 100%;
+    }
+    .divTexte {
+      border-radius: 10px 10px;
+    }
+  }
+  
+  @media all and (max-width: 767px) {
+    .texteBanner {
+      font-size: 24px;
+      max-width: 70%;
+      margin-left: 16px;
+    }
+  
+    .imgBanner {
+      min-height: 100%;
+    }
+    .divTexte {
+      border-radius: 10px 10px;
+      justify-content: flex-start;
+    }
+  }
+  

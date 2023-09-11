@@ -1,0 +1,36 @@
+.divBanner {
+    min-height: 223px;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .collapse {
+    max-width: 75%;
+    min-width: 75%;
+    margin-top: 31px;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media all and (max-width: 1200px) {
+    .page {
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  
+    .collapse {
+      min-width: 85%;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .collapse {
+      min-width: 95%;
+    }
+  }
+  

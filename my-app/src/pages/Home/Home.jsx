@@ -1,7 +1,7 @@
 import style from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
 import imgBanner from "../../assets/banner.png";
-import Thumb from "../../components/Card/Card";
+import Open from "../../components/Card/Card";
 import Card from "../../datas/appartments.json";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
         {Card.map((logement) => {
           return (
             <div className={style.blockCard} key={logement.id}>
-              <Thumb
+              <Open
                 cardId={logement.id}
                 cardTitre={logement.title}
                 cardImg={logement.cover}

@@ -5,13 +5,13 @@ import Gauche from "../../assets/prev.png";
 
 function Carrousel({ logementPictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  // Fonction pour afficher l'image suivante
   const nextImg = () => {
     setCurrentIndex((currentIndex) =>
       currentIndex === logementPictures.length - 1 ? 0 : currentIndex + 1
     );
   };
-
+  // Fonction pour afficher l'image précédente
   const prevImg = () => {
     setCurrentIndex((currentIndex) =>
       currentIndex === 0 ? logementPictures.length - 1 : currentIndex - 1
@@ -48,8 +48,9 @@ function Carrousel({ logementPictures }) {
             </div>
           </>
         ) : (
+          // Pas de code ici car il s'agit de la div qui sera utilisée au cas où le carrousel ne contiendrait qu'une seule image.
           <div className={style.imgContainerSingle}>
-            
+
           </div>
         )}
       </section>

@@ -1,0 +1,84 @@
+.Container {
+  width: 100%;
+}
+
+.fleche {
+  max-width: 24px;
+  max-height: 14px;
+}
+
+/**ICI ON GERE L'ANIMATION*/
+
+.rotate {
+  animation: rotate 400ms ease forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/***/
+
+
+.Titre {
+  max-height: 47px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.5em;
+  align-items: center;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.content {
+  border-radius: 5px;
+  padding: 2% 1.8% 1.5% 2%;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+}
+
+@media all and (max-width: 991px) {
+
+  .fleche {
+    width: 15px;
+  }
+
+  .Titre {
+    font-size: 21px;
+    height: 35px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .fleche {
+    width: 15px;
+  }
+
+  .Titre {
+    font-size: 13px;
+    height: 30px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+}
