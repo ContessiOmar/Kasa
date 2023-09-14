@@ -63,18 +63,21 @@
   }
   
   @media all and (max-width: 991px) {
-    .number {
-      display: none;
-    }
   
+    .number {
+      top: 10em;
+      right: 49%;
+    }
     .fleche {
       height: 40px;
     }
   }
   
   @media all and (max-width: 767px) {
+
     .number {
-      display: none;
+      top: 5em;
+      right: 47%;
     }
   
     .fleche {

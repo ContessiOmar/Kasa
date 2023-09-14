@@ -8,9 +8,10 @@ function Carrousel({ logementPictures }) {
   // Fonction pour afficher l'image suivante
   const nextImg = () => {
     setCurrentIndex((currentIndex) =>
-      currentIndex === logementPictures.length - 1 ? 0 : currentIndex + 1
+      currentIndex >= logementPictures.length - 1 ? 0 : currentIndex + 1
     );
   };
+    
   // Fonction pour afficher l'image précédente
   const prevImg = () => {
     setCurrentIndex((currentIndex) =>

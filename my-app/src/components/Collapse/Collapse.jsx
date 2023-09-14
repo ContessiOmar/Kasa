@@ -6,7 +6,7 @@ import React, { useState } from "react";
 function Collapse(props) {
   // Initialise l'état aboutState avec la valeur booléenne "true"
   const [aboutState, setAboutState] = useState(true);
-  // Initialise l'état animationActive avec la valeur booléenne "false"
+  // Initialise l'état animationActive avec la valeur "false"
   const [animationActive, setAnimationActive] = useState(false);
 
   // Fonction pour gérer le basculement de l'état aboutState
